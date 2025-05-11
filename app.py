@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 import streamlit as st
 
 # import data
-df = pd.read_excel('cars.xls', engine='openpyxl')
+df=pd.read_excel('cars.xls')
 x=df.drop('Price', axis=1)
 y=df[['Price']]
 
